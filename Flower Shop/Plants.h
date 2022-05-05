@@ -8,6 +8,7 @@ using std::string;
 using std::vector;
 using std::endl;
 
+//creates an abstract class 
 class Plants
 {
 protected:
