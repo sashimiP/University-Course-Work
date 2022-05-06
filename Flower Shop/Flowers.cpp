@@ -13,11 +13,11 @@ void Flowers::EnterData()
 
 void Flowers::Display() const
 {
-	cout << "Plant type: " << type << endl;
-	cout <<"Name: " << name << endl;
-	cout <<"Price: " << price <<" lv"<< endl;
-	cout << "Available quantity: " << quantity << endl;
-	cout << "Colour: " << colour << endl;
+	cout << "\t\t\tPlant type: " << type << endl;
+	cout <<"\t\t\tName: " << name << endl;
+	cout <<"\t\t\tPrice: " << price <<" lv"<< endl;
+	cout << "\t\t\tAvailable quantity: " << quantity << endl;
+	cout << "\t\t\tColour: " << colour << endl<<endl;
 	
 }
 
