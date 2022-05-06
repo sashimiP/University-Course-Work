@@ -1,7 +1,6 @@
 #pragma once
 #include"Plants.h"
 
-//is derived from Plants
 class Trees: public Plants
 {
 private:
@@ -13,5 +12,6 @@ public:
 	void Display() const;
 	void SetType(string type);
 	float GetPrice() const;
+	string StringToTitle(string name) const;
 	
 };
