@@ -1,16 +1,16 @@
 #pragma once
 #include"Plants.h"
-
-//is derived from Plants
-class Flowers: public Plants
+class Trees: public Plants
 {
 private:
-	string colour{};
+	unsigned int height{};
+	string treeType{};
+
 public:
 	void EnterData();
 	void Display() const;
 	void SetType(string type);
 	float GetPrice() const;
-	string GetColour() const;
+	string StringToTitle(string name) const;
 	
 };
