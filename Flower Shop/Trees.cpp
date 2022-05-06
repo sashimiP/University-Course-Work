@@ -11,12 +11,12 @@ void Trees::EnterData()
 
 void Trees::Display() const
 {
-	cout << "Plant type: "<<type<<endl;
-	cout << "Name: " << name<<endl;
-	cout << "Price: " << price<<" lv"<<endl;
-	cout << "Available quantity: " << quantity<<endl;
-	cout << "Height: " << height << "m" << endl;
-	cout << "Type: " << type << endl;
+	cout << "\t\t\tPlant type: "<<type<<endl;
+	cout << "\t\t\tName: " << name<<endl;
+	cout << "\t\t\tPrice: " << price<<" lv"<<endl;
+	cout << "\t\t\tAvailable quantity: " << quantity<<endl;
+	cout << "\t\t\tHeight: " << height << "m" << endl;
+	cout << "\t\t\tType: " << treeType << endl<<endl;
 }
 
 void Trees::SetType(string type)
