@@ -13,11 +13,11 @@ void Flowers::EnterData()
 
 void Flowers::Display() const
 {
-	cout << "\t\t\tPlant type: " << type << endl;
-	cout <<"\t\t\tName: " << name << endl;
+	cout << "\t\t\tPlant type: " << StringToTitle(type) << endl;
+	cout <<"\t\t\tName: " << StringToTitle(name) << endl;
 	cout <<"\t\t\tPrice: " << price <<" lv"<< endl;
 	cout << "\t\t\tAvailable quantity: " << quantity << endl;
-	cout << "\t\t\tColour: " << colour << endl<<endl;
+	cout << "\t\t\tColour: " << StringToTitle(colour) << endl<<endl;
 	
 }
 
@@ -29,3 +29,20 @@ void Flowers::SetType(string type)
 float Flowers::GetPrice() const { return price; }
 
 string Flowers::GetColour() const { return colour; }
+
+string Flowers::StringToTitle(string name) const
+{
+	for (int i = 0; i < name.size(); i++)
+	{
+		if (i == 0)
+		{
+			name[i] = toupper(name[i]);
+		}
+		if (name[i] == ' ')
+		{
+			name[i + 1] = toupper(name[i + 1]);
+		}
+	}
+
+	return name;
+}
