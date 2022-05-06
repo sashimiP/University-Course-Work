@@ -1,14 +1,18 @@
+#pragma once
+#include<iostream>
 #include<vector>
 #include<string>
 #include<windows.h>
 #include<algorithm>
+#include<cctype>
+
+
 using std::cout;
 using std::cin;
 using std::string;
 using std::vector;
 using std::endl;
 
-//creates an abstract class 
 class Plants
 {
 protected:
@@ -22,4 +26,6 @@ public:
 	void virtual SetType(string type) = 0;
 	float virtual GetPrice() const = 0;
 	string virtual GetColour() const { return ""; }
+	string virtual StringToTitle(string name) const = 0;
+
 };
